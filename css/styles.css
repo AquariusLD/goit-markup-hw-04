@@ -201,6 +201,13 @@ footer {
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/hero/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 */ .section-solution-container {
@@ -313,6 +320,17 @@ footer {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
+}
+
+.properties-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  width: 264px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 /* Team */
