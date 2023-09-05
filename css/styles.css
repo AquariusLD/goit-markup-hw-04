@@ -526,7 +526,7 @@ footer {
   width: calc((100% - 48px) / 3);
 }
 
-.portfolio-list:hover {
+.portfolio-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -554,30 +554,31 @@ footer {
   letter-spacing: 0.32px;
 }
 
-.portfolio-name:hover {
-  transform: translateY(0%);
-}
-
 .portfolio-apps {
   margin-bottom: 8px;
 }
 
-.portfolio-overflow {
+.portfolio-overlay {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-overflow-text {
+.portfolio-overlay:hover .portfolio-overlay-text {
+  transform: translatey(0);
+}
+
+.portfolio-overlay-text {
   position: absolute;
   top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
   padding: 40px 32px;
+  color: #f4f4fd;
   background-color: #4d5ae5;
-  height: 100%;
-  width: 100%;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -620,4 +621,59 @@ footer {
   letter-spacing: 0.32px;
   width: 264px;
   display: flex;
+}
+
+.container .footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.logotype-down {
+  margin-right: 120px;
+}
+
+.social-media-footer-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+  font-family: Roboto;
+  font-style: normal;
+}
+
+.social-media-list-footer {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.social-media-footer-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-media-footer-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-footer-link:hover,
+.social-media-footer-link:focus {
+  background-color: #31d0aa;
+}
+
+.social-media-footer-icon {
+  fill: #f4f4fd;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-media-footer {
+  margin-left: auto;
 }
